@@ -37,9 +37,9 @@ setInterval(function() {
     });
 }, UpdateFrequency);
 
-console.log('BlaBla server started');
+console.log('BlaBla server started on ' + process.env.PORT);
 http.createServer(function(request, response) {
     response.writeHead(200, {"Content-Type": "text/xml"});
     response.write(feedxml);
     response.end();
-}).listen(8888);
+}).listen(process.env.PORT);
