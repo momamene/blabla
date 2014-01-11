@@ -16,6 +16,7 @@
     "url": "https://github.com/momamene/blabla/issues"
   },
   "dependencies": {
-    "rss": "~0.2.1"
+    "rss": "~0.2.1",
+    "request": "~2.31.0"
   }
 }
